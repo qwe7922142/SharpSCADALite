@@ -1,0 +1,60 @@
+﻿[
+    {
+        "ID": 1,
+        "DriverID": 6,
+        "Name": "S1",
+        "Assembly": null,
+        "ClassName": "FileDriver.TagDriver",
+        "Target": {
+            "FileName": null,
+            "TimeOut": 240,
+            "ID": 1,
+            "Name": "S1",
+            "IsClosed": false,
+            "Groups": [],
+            "Parent": null
+        }
+    },
+    {
+        "ID": 7,
+        "DriverID": 9,
+        "Name": "modbusTcp",
+        "Assembly": null,
+        "ClassName": "ModbusDriver.ModbusTCPReader",
+        "Target": {
+            "PDU": 249,
+            "ID": 7,
+            "SlaveID": 1,
+            "Name": "modbusTcp",
+            "ServerName": "127.0.0.1",
+            "Port": 502,
+            "IsClosed": true,
+            "TimeOut": 100,
+            "Groups": [],
+            "Parent": null,
+            "Limit": 60
+        }
+    },
+    {
+        "ID": 8,
+        "DriverID": 8,
+        "Name": "modbusSerialRTU",
+        "Assembly": null,
+        "ClassName": "ModbusDriver.ModbusRTUReader",
+        "Target": {
+            "ID": 8,
+            "SlaveID": 1,
+            "Name": "modbusSerialRTU",
+            "PortName": "COM2",
+            "IsClosed": true,
+            "TimeOut": 100,
+            "BaudRate": 9600,
+            "DataBits": 8,
+            "StopBits": 1,
+            "Parity": 1,
+            "Groups": [],
+            "Parent": null,
+            "PDU": 253
+        }
+    }
+]

@@ -1,0 +1,37 @@
+﻿[
+    {
+        "DriverID": 8,
+        "AssemblyName": "\\Driver\\ModbusDriver.dll",
+        "Description": "Modbus RTU协议",
+        "ClassName": "ModbusRTUReader",
+        "ClassFullName": "ModbusDriver.ModbusRTUReader"
+    },
+    {
+        "DriverID": 9,
+        "AssemblyName": "\\Driver\\ModbusDriver.dll",
+        "Description": "Modbus Tcp协议",
+        "ClassName": "ModbusTCPReader",
+        "ClassFullName": "ModbusDriver.ModbusTCPReader"
+    },
+    {
+        "DriverID": 4,
+        "AssemblyName": "\\Driver\\OPCDriver.dll",
+        "Description": "OPC协议",
+        "ClassName": "OPCReader",
+        "ClassFullName": "OPCDriver.OPCReader"
+    },
+    {
+        "DriverID": 5,
+        "AssemblyName": "\\Driver\\FileDriver.dll",
+        "Description": "SQL 数据库",
+        "ClassName": "DataBaseReader",
+        "ClassFullName": "FileDriver.DataBaseReader"
+    },
+    {
+        "DriverID": 6,
+        "AssemblyName": "\\Driver\\FileDriver.dll",
+        "Description": "标签直接读写",
+        "ClassName": "TagDriver",
+        "ClassFullName": "FileDriver.TagDriver"
+    }
+]

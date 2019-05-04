@@ -1,0 +1,34 @@
+﻿[
+    {
+        "Name": "Receiving1",
+        "ID": 20001,
+        "DriverID": 1,
+        "UpdateRate": 300,
+        "DeadBand": 0.0,
+        "Active": true
+    },
+    {
+        "Name": "Receiving2",
+        "ID": 20002,
+        "DriverID": 1,
+        "UpdateRate": 0,
+        "DeadBand": 0.0,
+        "Active": true
+    },
+    {
+        "Name": "group1",
+        "ID": 20003,
+        "DriverID": 7,
+        "UpdateRate": 100,
+        "DeadBand": 0.0,
+        "Active": true
+    },
+    {
+        "Name": "group2",
+        "ID": 20004,
+        "DriverID": 8,
+        "UpdateRate": 100,
+        "DeadBand": 0.0,
+        "Active": true
+    }
+]

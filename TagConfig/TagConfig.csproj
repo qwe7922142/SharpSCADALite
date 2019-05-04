@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{18F86945-9CB9-4149-A09C-85B8C5C7C4ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TagConfig</RootNamespace>
+    <AssemblyName>TagConfig</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Wizard.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Condition.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTagMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTagMonitor.Designer.cs">
+      <DependentUpon>FormTagMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTest.Designer.cs">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterSet.Designer.cs">
+      <DependentUpon>RegisterSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TagParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TagParam.Designer.cs">
+      <DependentUpon>TagParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriverSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverSet.Designer.cs">
+      <DependentUpon>DriverSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupParam.Designer.cs">
+      <DependentUpon>GroupParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SortableBindingList.cs" />
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTagMonitor.resx">
+      <DependentUpon>FormTagMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTest.resx">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterSet.resx">
+      <DependentUpon>RegisterSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TagParam.resx">
+      <DependentUpon>TagParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverSet.resx">
+      <DependentUpon>DriverSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupParam.resx">
+      <DependentUpon>GroupParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PPrint.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PSave.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Timer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tool.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attribute.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Collect.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database.ico" />
+    <None Include="Resources\Link.ico" />
+    <None Include="Resources\Page-Setup.ico" />
+    <None Include="Resources\Tip.ico" />
+    <None Include="Resources\Database1.ico" />
+    <None Include="Resources\Link1.ico" />
+    <None Include="Resources\Tip1.ico" />
+    <None Include="Resources\Page-Setup1.ico" />
+    <Content Include="Wizard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClientDriver\ClientDriver.csproj">
+      <Project>{6df53968-152d-4ca9-b62f-ff1c27069c4d}</Project>
+      <Name>ClientDriver</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CoreExample\CoreExample.csproj">
+      <Project>{e0357080-3f5f-46a2-a11b-75249987695e}</Project>
+      <Name>CoreExample</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataService\DataService.csproj">
+      <Project>{8965e389-6466-4b30-bd43-83c909044637}</Project>
+      <Name>DataService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FileDriver\FileDriver.csproj">
+      <Project>{fcdb7791-f4b6-4504-91bc-4d0291e317f3}</Project>
+      <Name>FileDriver</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModbusDriver\ModbusDriver.csproj">
+      <Project>{aea44301-6a29-4af7-91e8-e6d755b618f1}</Project>
+      <Name>ModbusDriver</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
